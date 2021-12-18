@@ -32,6 +32,65 @@
 
 	<!--Helper Inline CSS-->
 	<style>
+
+
+
+
+.afflbtn {
+
+	font-family: 'Poppins', sans-serif;
+  background-color: #F28123;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+
+  
+  
+ 
+  
+  
+}
+
+.afflbtn:hover {
+  background-color: Black;
+  color: #F28123;
+}
+
+.affldown {
+  position: relative;
+  display: inline-block;
+}
+
+.affldown-content {
+  display: none;
+  position: absolute;
+  background-color: #0c0000;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.affldown-content a {
+	font-family: 'Poppins', sans-serif;
+  color: #F28123;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.affldown a:hover {background-color: rgb(197, 0, 0);}
+
+.showaffl {display: block;}
+
+
+
 		 
 
 
@@ -76,8 +135,8 @@
 							<ul>
 								<li class="current-list-item"><a href="index.html">Home</a>
 								</li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Brands</a>
+								<li><a href="#">Brands</a></li>
+								<li><a href="#">Products</a>
 									<!-- 
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
@@ -90,7 +149,7 @@
 									</ul>
 									-->
 								</li>
-								<li><a href="#">Products</a>
+								<li><a href="#">Our Network</a>
 									<!--
 									<ul class="sub-menu">
 										<li><a href="news.html">News</a></li>
@@ -98,7 +157,7 @@
 									</ul>
 									-->
 								</li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Connect Now</a></li>
 								<!--
 								<li><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
@@ -160,8 +219,8 @@
 								<p class="subtitle">WESPOBAZAAR</p>
 								<h1>Quality Product at Low Price!</h1>
 								<div class="hero-btns">
-									<a href="shop.html" class="boxed-btn">Collection</a>
-									<a href="contact.html" class="bordered-btn">Contact Us</a>
+									<a href="shop.html" class="boxed-btn">Collections</a>
+									<a href="contact.html" class="bordered-btn">Connect Now</a>
 								</div>
 							</div>
 						</div>
@@ -176,11 +235,11 @@
 					<div class="col-lg-10 offset-lg-1 text-center">
 						<div class="hero-text">
 							<div class="hero-text-tablecell">
-								<p class="subtitle">Choose One For You</p>
+								<p class="subtitle">Welcome TO WespoBazaar</p>
 								<h1>Enjoy your good deal with us!!</h1>
 								<div class="hero-btns">
-									<a href="shop.html" class="boxed-btn">Visit Shop</a>
-									<a href="contact.html" class="bordered-btn">Contact Us</a>
+									<a href="shop.html" class="boxed-btn">Visit Now</a>
+									<a href="contact.html" class="bordered-btn">Connect Now</a>
 								</div>
 							</div>
 						</div>
@@ -198,8 +257,8 @@
 								<p class="subtitle">Mega Sale Going On!</p>
 								<h1>Get Discount and good price!!</h1>
 								<div class="hero-btns">
-									<a href="shop.html" class="boxed-btn">Visit Shop</a>
-									<a href="contact.html" class="bordered-btn">Contact Us</a>
+									<a href="shop.html" class="boxed-btn">Explore Us</a>
+									
 								</div>
 							</div>
 						</div>
@@ -262,8 +321,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-title">	
-						<h3><span class="orange-text">Wespo</span> Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+						<h3><span class="orange-text">Wespo</span> Products</h3>
+						<p>We have all Products of your Need.</p>
 					</div>
 					<div class="col-md-12">
 						<div class="product-filters">
@@ -274,7 +333,8 @@
 								<li data-filter=".wicket">Wicket</li>
 								<li data-filter=".bag">Bag</li>
 								<li data-filter=".gaurd">Gaurd</li>
-								<li data-filter=".helmet">helmet</li>
+								<li data-filter=".helmet">Helmet</li>
+								<li data-filter=".other">Others</li>
 							</ul>
 						</div>
 					</div>
@@ -284,289 +344,467 @@
 			
 			
 			<div class= " row product-lists ">
-				
-				<div class="col-lg-4 col-md-6 text-center bag" id="23" >
+
+
+				<div class="col-lg-4 col-md-6 text-center bat" >
 					<div class="single-product-item">
 						<div class="product-image">
-						<a href="single-product.html" ><img src="assets/img/products/Bag.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Bat1.jpeg" alt=""></a>
 						</div>
-						<h3>BAG</h3>
+						<h3>Bat</h3>
 						<p class="product-price"><span>Buy</span>  </p>
-						<a href="#"  class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown1')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown1" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 text-center bag">
+
+
+
+				<div class="col-lg-4 col-md-6 text-center ball" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Ball.jpeg" alt=""></a>
+						</div>
+						<h3>Ball</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown2')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown2" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
+					</div>
+				</div>
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center bag" >
+					<div class="single-product-item">
+						<div class="product-image">
+						<a href="single-product.html" ><img src="assets/img/products/Bag2.jpeg" alt=""></a>
 						</div>
 						<h3>Bag</h3>
-						<p class="product-price"><span>Buy</span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown3')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown3" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center ball">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center helmet" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Ball.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Helmet.jpeg" alt=""></a>
 						</div>
-						<h3>Ball</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Helmets</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown4')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown4" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center ball">
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center gaurd" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Ball2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/ThighGaurd.jpeg" alt=""></a>
 						</div>
-						<h3>Ball</h3>
-						<p class="product-price"><span></span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Gaurds</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown5')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown5" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bat ">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center gloves" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/bat.jpeg" alt=""></a>
-						</div>
-						<h3>Bat</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bat">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/bat2.jpeg" alt=""></a>
-						</div>
-						<h3>Bat</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bat">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bat1.jpeg" alt=""></a>
-						</div>
-						<h3>Bat</h3>
-						<p class="product-price"><span></span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bat">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/bat3.jpeg" alt=""></a>
-						</div>
-						<h3>Bat </h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center gaurd">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/gaurd.jpeg" alt=""></a>
-						</div>
-						<h3>Gaurd</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center gaurd">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Gloves2.jpeg" alt=""></a>
-						</div>
-						<h3>Groves</h3>
-						<p class="product-price"><span></span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center helmet">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Helmet.jpeg" alt=""></a>
-						</div>
-						<h3>Helmet</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center wicket">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/wicket2.jpeg" alt=""></a>
-						</div>
-						<h3>Wicket</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center helmet">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Helmet.jpeg" alt=""></a>
-						</div>
-						<h3>Helmet</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center gaurd">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Pad.jpeg" alt=""></a>
-						</div>
-						<h3>Pad</h3>
-						<p class="product-price"><span></span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center wicket">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/wicket.jpeg" alt=""></a>
-						</div>
-						<h3>Wicket</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center gaurd">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/ThighGaurd.jpeg" alt=""></a>
-						</div>
-						<h3>Thigh Gaurd</h3>
-						<p class="product-price"><span></span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center gaurd">
-					<div class="single-product-item">
-						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Gloves3.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Gloves.jpeg" alt=""></a>
 						</div>
 						<h3>Gloves</h3>
-						<p class="product-price"><span></span> </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown6')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown6" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bat">
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/bat.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Jersey.jpeg" alt=""></a>
 						</div>
-						<h3>Bat</h3>
-						<p class="product-price"><span></span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Jersey</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown7')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown7" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center gaurd">
+
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center gaurd" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Pad.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Pad.jpeg" alt=""></a>
 						</div>
-						<h3>Pad</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Pads</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown8')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown8" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center ball">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center wicket" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Ball2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/wicket.jpeg" alt=""></a>
 						</div>
-						<h3>Ball</h3>
-						<p class="product-price"><span>  </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Wickets</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown9')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown9" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/SportsShoes.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Cricket Shoes</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown10')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown10" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Kit.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3> Cricket Kit</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown11')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown11" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-					    	<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/HangingBall.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Hanging Ball</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown12')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown12" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center bag" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/CricketKitBag.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Kit Bag</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown13')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown13" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Sweater.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Men Sweater</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown14')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown14" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Trouserf.jpeg" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Men Trousers</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown15')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown15" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Cup.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Merchandise</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown16')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown16" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center bag">
+
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/Bag2.jpeg" alt=""></a>
+						<a href="single-product.html" ><img src="assets/img/products/Sun Glasses.webp" alt=""></a>
 						</div>
-						<h3>Bag</h3>
-						<p class="product-price"><span> </span>  </p>
-						<a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i> Get Now</a>
+						<h3>Sun Glasses</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown17')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown17" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
 					</div>
 				</div>
-			</div>
-		</div>
+
+
+
+				<div class="col-lg-4 col-md-6 text-center other" >
+					<div class="single-product-item">
+						<div class="product-image">
+						<a href="single-product.html" ><img src="assets/img/products/BOOKSDHN.jpeg" alt=""></a>
+						</div>
+						<h3>Cricket Books</h3>
+						<p class="product-price"><span>Buy</span>  </p>
+					
+
+						<div class="affldown">
+							<button onclick="myFunction('myDropdown18')" class="afflbtn" ><i class="fas fa-shopping-cart"></i>Get Now</button>
+							<div id="myDropdown18" class="affldown-content">
+							  <a href="https://www.flipkart.com">Flipkart</a>
+							  <a href="https://www.amazon.in">Amazon</a>
+							  <a href="#">2Gud</a>
+							</div>
+						  </div>
+
+
+					</div>
+				</div>
+
+
+
+
+
+</div>
 	
 </div>
 	<!-- end product section -->
@@ -591,8 +829,8 @@
                 <!--Content Column-->
                 <div class="content-column col-lg-6">
 					<h3><span class="orange-text">Deal</span> of the month</h3>
-                    <h4>PRODUCT 3 PRODUCT</h4>
-                    <div class="text">Quisquam minus maiores repudiandae nobis, minima saepe id, fugit ullam similique! Beatae, minima quisquam molestias facere ea. Perspiciatis unde omnis iste natus error sit voluptatem accusant</div>
+                    <h4>Buy 1 Get 1 free!!</h4>
+                    <div class="text">Limited edition flashing on flipkart</div>
                     <!--Countdown Timer-
                     <div class="time-counter"><div class="time-countdown clearfix" data-countdown="2020/2/01"><div class="counter-column"><div class="inner"><span class="count">00</span>Days</div></div> <div class="counter-column"><div class="inner"><span class="count">00</span>Hours</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Mins</div></div>  <div class="counter-column"><div class="inner"><span class="count">00</span>Secs</div></div></div></div>
 					-->
@@ -621,7 +859,7 @@
 								<img src="assets/img/avaters/avatar1.png" alt="">
 							</div>
 							<div class="client-meta">
-								<h3>Saira Hakim <span>Local shop owner</span></h3>
+								<h3>Raushan Sir <span>Founder and Owner</span></h3>
 								<p class="testimonial-body">
 									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
 								</p>
@@ -635,7 +873,7 @@
 								<img src="assets/img/avaters/avatar2.png" alt="">
 							</div>
 							<div class="client-meta">
-								<h3>David Niph <span>Local shop owner</span></h3>
+								<h3>Ashish Sir <span>Co-Founder</span></h3>
 								<p class="testimonial-body">
 									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
 								</p>
@@ -649,7 +887,7 @@
 								<img src="assets/img/avaters/avatar3.png" alt="">
 							</div>
 							<div class="client-meta">
-								<h3>Jacob Sikim <span>Local shop owner</span></h3>
+								<h3>Suraj Mishra <span>Digital Support</span></h3>
 								<p class="testimonial-body">
 									" Sed ut perspiciatis unde omnis iste natus error veritatis et  quasi architecto beatae vitae dict eaque ipsa quae ab illo inventore Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
 								</p>
@@ -691,7 +929,7 @@
 					<div class="abt-text">
 						<p class="top-sub">Founded Year 2021 </p>
 						<h2>We are <span class="orange-text">WESPOBAZAAR</span></h2>
-						<p>We provide you a interface where you can choose the product of your choice at one one place.</p>
+						<p>We provide you a interface where you can choose the product of your choice at one place.</p>
 						<p>We provide best quality product with the help of our quality partners.Choose us for better shoping experience.</p>
 						<a href="about.html" class="boxed-btn mt-4">know more</a>
 					</div>
@@ -918,5 +1156,40 @@
 function xyz(){
 	document.getElementById(23)
 	alert("sj ",23);
-	}</script>
+	}
+
+
+
+	
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction(x) {
+  document.getElementById(x).classList.toggle("showaffl");
+}
+
+
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.afflbtn')) {
+    var dropdowns = document.getElementsByClassName("affldown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('showaffl')) {
+        openDropdown.classList.remove('showaffl');
+      }
+    }
+  }
+}
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
 </html>
