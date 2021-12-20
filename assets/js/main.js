@@ -1,5 +1,5 @@
 function baseUrl(){
-    window.location.href = '/index.html';
+    window.location.href = '/wespobazaar/';
 
 
 }
