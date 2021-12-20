@@ -4,7 +4,7 @@ function baseUrl(){
 
 }
 function baseCnt(){
-    window.location.href='/wespobaaar/'
+    window.location.href='/wespobazaar/'
 }
 
 
