@@ -1,3 +1,11 @@
+function baseUrl(){
+    window.location.href = '/index.html';
+
+
+}
+
+
+
 (function ($) {
     "use strict";
 
