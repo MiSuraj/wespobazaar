@@ -98,8 +98,12 @@
   width: 100%;
   height: 100%;
   content: "";
-  background: url("/assets/img/products/Helmet.jpeg");
-  filter:brightness(20%);
+  background: rgba(0,0,0,0.7) url("/assets/img/products/Helmet.jpeg") no-repeat  ;
+  background-size: cover;
+  background-blend-mode: darken;
+ 
+  overflow: hidden;
+  color: #ffffff;
   z-index: -1;
   opacity: 0.8;
 

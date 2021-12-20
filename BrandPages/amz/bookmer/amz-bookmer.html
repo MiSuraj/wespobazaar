@@ -98,10 +98,15 @@
   width: 100%;
   height: 100%;
   content: "";
-  background: url("/assets/img/products/Helmet.jpeg");
-  filter:brightness(20%);
+  background: rgba(0,0,0,0.7) url("/assets/img/products/Helmet.jpeg") no-repeat  ;
+  background-size: cover;
+  background-blend-mode: darken;
+ 
+  overflow: hidden;
+  color: #ffffff;
   z-index: -1;
   opacity: 0.8;
+
 
 
  
@@ -135,20 +140,22 @@
 						<!-- logo -->
 						<div class="site-logo">
 							<a onclick="baseUrl()">
+								<!--
+								<img src="./assets/img/logo" alt="">
+								-->
 								<h3><span class="orange-text">Wespo</span> Bazaar</h3>
 							</a>
 						</div>
 						<!-- logo -->
 
-
 						<!-- menu start -->
-
 						<nav class="main-menu">
 							<ul>
 								<li class="current-list-item"><a onclick="baseUrl()">Home</a>
 								</li>
-								<li><a href="#">Brands</a></li>
+								
 								<li><a href="#">Products</a>
+									<li><a href="#">Brands</a></li>
 									<!-- 
 									<ul class="sub-menu">
 										<li><a href="404.html">404 page</a></li>
@@ -169,16 +176,16 @@
 									</ul>
 									-->
 								</li>
-								<li><a href="#">Connect Now</a></li>
-								<!--
-								<li><a href="shop.html">Shop</a>
+								
+								<li><a href="Contact.html">Connect Wespo</a>
 									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
+										<li><a href="contact.html" target="_blank"><i class="fas fa-envelope"></i></a>Email Us</li>
+										<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a>Youtube</li>
+							             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a>Instagram</li>
+							              <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a>Facebook</li>
+							               <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a>Twitter</li>
 									</ul>
-									-->
+									
 								</li>
 								<!--
 								<li>
@@ -198,7 +205,6 @@
 			</div>
 		</div>
 	</div>
-						
 	
 	<!-- end header -->
 
